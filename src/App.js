@@ -1,9 +1,18 @@
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import './App.css';
+
+import NavigationBar from './NavigationBar'
+import Routes from './Routes';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+      <BrowserRouter>
+        <NavigationBar />
+        <Routes />
+      </BrowserRouter>
     </div>
   );
 }
